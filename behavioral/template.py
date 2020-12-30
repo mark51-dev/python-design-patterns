@@ -36,25 +36,25 @@ class AbstractClass(ABC):
 
 
 class ConcreteClass1(AbstractClass):
-    def required_operations1(self) -> None:
+    def required_operations1(self):
         print("ConcreteClass1 says: Implemented Operation1")
 
-    def required_operations2(self) -> None:
+    def required_operations2(self):
         print("ConcreteClass1 says: Implemented Operation2")
 
 
 class ConcreteClass2(AbstractClass):
-    def required_operations1(self) -> None:
+    def required_operations1(self):
         print("ConcreteClass2 says: Implemented Operation1")
 
-    def required_operations2(self) -> None:
+    def required_operations2(self):
         print("ConcreteClass2 says: Implemented Operation2")
 
-    def hook1(self) -> None:
+    def hook1(self):
         print("ConcreteClass2 says: Overridden Hook1")
 
 
-def client_code(abstract_class: AbstractClass) -> None:
+def client_code(abstract_class: AbstractClass):
     abstract_class.template_method()
 
 

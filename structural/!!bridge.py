@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# change abstraction for different actions
+
 class Abstraction:
     def __init__(self, implementation):
         self.implementation = implementation
